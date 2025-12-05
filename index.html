@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Kafetería Kromasol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Menú Kafetería Kromasol</h1>
+    </header>
+
+    <main class="menu-container">
+        
+        <section id="kafes-kalientes">
+            <h2>Kafés Kalientes</h2>
+            
+            <div class="menu-item">
+                <h3>Kafé de Olla con Canela</h3>
+                <p>nox Black con agua caliente.</p>
+                <span class="precio">$25.00</span>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Kafé Kapuccino</h3>
+                <p>nox Capuchino y espuma.</p>
+                <span class="precio">$25.00</span>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Kafé Moka</h3>
+                <p>nox Moka con agua caliente.</p>
+                <span class="precio">$25.00</span>
+            </div>
+        </section>
+        
+        <section id="kafes-frios">
+            <h2>Kafés Fríos</h2>
+            
+            <div class="menu-item">
+                <h3>Kold Brew</h3>
+                <p>Infusión de café nox Black en frío por 12 horas.</p>
+                <span class="precio">$25.00</span>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Frappé de Karamel</h3>
+                <p>Café nox Capuchino mezclado con hielo y Antara karamel.</p>
+                <span class="precio">$60.00</span>
+            </div>
+        </section>
+        <section id="ubicacion-contacto">
+    <h2>📍 Encuentra Nuestra Kafetería</h2>
+    <p class="ubicacion-texto">
+        Estamos listos para recibirte con los mejores productos. ¡Ven a conocernos!
+    </p>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com.mx/maps/place/Kafeter%C3%ADa+Kromasol/@19.3357283,-99.0211805,17z/data=!3m1!4b1!4m6!3m5!1s0x85ce03d489483281:0x9b0e94b587f8d363!8m2!3d19.3357283!4d-99.0186056!16s%2Fg%2F11t0w4kf3q?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    </section>
+<section id="formulario-contacto">
+    <h2>✉ Contáctanos</h2>
+    
+    <form id="contactoForm" class="contact-form" onsubmit="enviarPorWhatsapp(event)">
+    
+    <button type="submit" class="submit-button">Enviar Mensaje por WhatsApp</button>
+</form>
+        
+        <div class="form-group">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Tu Korreo Electróniko:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="mensaje">Mensaje o Pedido:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Enviar Mensaje</button>
+    </form>
+    
+</section>
+
+    </main>
+<script src="script.js"></script> 
+</body>
+</html>
+</body>
+</html>

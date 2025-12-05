@@ -1,0 +1,154 @@
+/* --- Estilos Generales del Cuerpo --- */
+body {
+    font-family: Arial, sans-serif; /* Fuente estándar para el texto */
+    background-color: #f4f0e8;      /* Un color crema claro de fondo */
+    color: #4a3c30;                 /* Color de texto principal (marrón oscuro) */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Estilos de la Kabecera (Header) --- */
+header {
+    background-color: #6f4e37; /* Color marrón café para la barra del título */
+    color: #ffffff;            /* Letras blancas */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    /* Usamos la fuente especial que importamos para el título */
+    font-family: 'Pacifico', cursive;
+    font-size: 3em; /* Tamaño grande */
+    margin: 0;
+}
+
+/* --- Contenedor Principal del Menú --- */
+.menu-container {
+    max-width: 800px; /* Ancho máximo del menú */
+    margin: 30px auto; /* Centrar el contenedor en la página */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra sutil */
+}
+
+/* --- Títulos de Sección (Ej: Kafés Kalientes) --- */
+h2 {
+    font-family: 'Pacifico', cursive; /* Misma fuente especial */
+    font-size: 2.2em;
+    color: #6f4e37; /* Color marrón café */
+    border-bottom: 2px solid #f4f0e8; /* Línea divisoria sutil */
+    padding-bottom: 10px;
+    margin-top: 30px; /* Espacio antes de cada nueva sección */
+}
+
+/* --- Cada Elemento del Menú --- */
+.menu-item {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    flex-wrap: wrap; /* Permitir que se ajusten si la pantalla es pequeña */
+    justify-content: space-between; /* Empuja el precio a la derecha */
+    margin-bottom: 20px; /* Espacio entre cada item */
+}
+
+.menu-item h3 {
+    margin: 0;
+    color: #4a3c30;
+    font-size: 1.4em;
+}
+
+.menu-item p {
+    margin: 5px 0 0 0; /* Espacio pequeño arriba */
+    flex-basis: 100%; /* La descripción ocupa todo el ancho */
+    color: #777;
+    font-size: 0.95em;
+}
+
+.menu-item .precio {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #6f4e37;
+    /* Alinearse con el título H3 */
+    align-self: flex-start; 
+    margin-left: 15px; /* Espacio para que no choque con la descripción */
+}
+/* --- Estilos para la Sección de Ubicación y Contacto --- */
+#ubicacion-contacto {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.ubicacion-texto {
+    text-align: center;
+    font-style: italic;
+    color: #6f4e37; /* Color de tu marca de café */
+    margin-bottom: 20px;
+}
+
+/* Contenedor para hacer que el mapa sea responsivo */
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    /* Asegura que el iframe se adapte al contenedor */
+    display: block;
+}
+/* --- Estilos para el Formulario --- */
+#formulario-contacto {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.contact-form {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4a3c30;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no cambie el ancho total */
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite al usuario solo cambiar la altura */
+}
+
+.submit-button {
+    background-color: #6f4e37; /* Color de botón basado en el café */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #4a3c30; /* Color más oscuro al pasar el ratón */
+}
